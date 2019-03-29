@@ -1,0 +1,17 @@
+.post {
+  background: white;
+  margin: 9px 0;
+  max-width: 80%;
+}
+
+.comment {
+  padding: 10px;
+}
+
+.image {
+  background: white;
+  max-width: 95%;
+  margin: 5px;
+  /* height: 500px;
+  width: 500px; */
+}
