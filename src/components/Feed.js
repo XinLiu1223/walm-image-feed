@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Post from "./Post";
-import './Feed.css';
+import "./Feed.css";
 
 class Feed extends Component {
   constructor(props) {
@@ -52,12 +52,12 @@ class Feed extends Component {
       url: this.urlInput.current.value,
       comment: this.commentInput.current.value
     };
-    const arrNew = this.state.imgArr;
+    const arrNew = [...this.state.imgArr]; // should make a copy using spread not to mutate state directyly
     arrNew.push(imgObj);
     obj.imgArr = arrNew;
     this.setState(obj);
     this.commentInput.current.value = this.urlInput.current.value = "";
-  }
+  };
 
   render() {
     return (
@@ -77,11 +77,7 @@ class Feed extends Component {
                 ref={this.commentInput}
                 className="input margin2px"
               />
-              <input
-                value="New Post"
-                type="submit"
-                onClick={this.submit}
-              />
+              <input value="New Post" type="submit" onClick={this.submit} />
             </div>
           </div>
           {/* {Object.keys(this.state).map(key => (
