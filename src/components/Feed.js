@@ -21,16 +21,6 @@ class Feed extends Component {
           comment: "Green"
         }
       ]
-      // one: {
-      //   url:
-      //     "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-      //   comment: "Landscape"
-      // },
-      // two: {
-      //   url:
-      //     "https://images.unsplash.com/photo-1469827160215-9d29e96e72f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-      //   comment: "Green"
-      // }
     };
 
     this.urlInput = React.createRef();
@@ -38,13 +28,6 @@ class Feed extends Component {
   }
 
   submit = () => {
-    // const key = Math.floor(1000 * Math.random()).toString();
-    // const obj = {};
-    // obj[key] = {
-    //   url: this.urlInput.current.value,
-    //   comment: this.commentInput.current.value
-    // };
-    // this.setState(obj);
     const key = Math.floor(1000 * Math.random());
     const obj = {};
     const imgObj = {
